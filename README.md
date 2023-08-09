@@ -1,8 +1,8 @@
 # Bipartite Heterogeneous Graph for Emotional Reasoning
 
 This repository contains our source code and data for the CIKM 2023 accepted
-paper: A Bipartite Graph is All We Need for Enhancing Emotional Reasoning with
-Commonsense Knowledge.
+paper: [A Bipartite Graph is All We Need for Enhancing Emotional Reasoning with
+Commonsense Knowledge]().
 
 Here is an overview of the model:
 
@@ -81,3 +81,7 @@ Training with Conceptnet:
 ```
 python main.py --DATASET RECCON --model_checkpoint roberta-large --alpha 0.8 --NUM_TRAIN_EPOCHS 10 --BATCH_SIZE 1 --model_save_dir ./model_save_dir/RECCON --mode train --LR 3e-6 --SEED 42 --ROOT_DIR ./conceptnet_enhanced_data/ --CONV_NAME multidim_hgt --COMET_HIDDEN_SIZE 768 --CUDA# BHG
 ```
+
+## Citation
+
+Please cite the paper as follows:
