@@ -51,11 +51,11 @@ following data to re-extract knowledge data for all datasets.
 
 For training on ERC datasets, we use IEMOCAP as an exmaple:
 
-Training with COMET_2020:
+Training with COMET<sub>2020</sub>:
 ```
 python main.py --DATASET IEMOCAP --model_checkpoint roberta-large --NUM_TRAIN_EPOCHS 10 --BATCH_SIZE 16 --model_save_dir ./model_save_dir/IEMOCAP --mode train --SEED 42 --ROOT_DIR ./bart_comet_enhanced_data/ --CONV_NAME hgt --COMET_HIDDEN_SIZE 1024 --CUDA
 ```
-Training with COMET_2019:
+Training with COMET<sub>2019</sub>:
 ```
 python main.py --DATASET IEMOCAP --model_checkpoint roberta-large --NUM_TRAIN_EPOCHS 10 --BATCH_SIZE 16 --model_save_dir ./model_save_dir/IEMOCAP --mode train --SEED 42 --ROOT_DIR ./comet_origin_enhanced_data/ --CONV_NAME multidim_hgt --COMET_HIDDEN_SIZE 768 --CUDA
 ```
@@ -64,16 +64,16 @@ Training with Conceptnet:
 python main.py --DATASET IEMOCAP --model_checkpoint roberta-large --NUM_TRAIN_EPOCHS 10 --BATCH_SIZE 16 --model_save_dir ./model_save_dir/IEMOCAP --mode train --SEED 42 --ROOT_DIR ./conceptnet_enhanced_data/ --CONV_NAME multidim_hgt --COMET_HIDDEN_SIZE 768 --CUDA
 ```
 
-Training on other datasets are similar.
+Training on other ERC datasets are similar.
 
 
 For training on CEE dataset RECCON:
 
-Training with COMET_2020:
+Training with COMET<sub>2020</sub>:
 ```
-python main.py --DATASET RECCON --model_checkpoint roberta-large --alpha 0.8 --NUM_TRAIN_EPOCHS 10 --BATCH_SIZE 1 --model_save_dir ./model_save_dir/RECCON --mode train --LR 3e-6 --SEED 42 --ROOT_DIR ./bart_comet_enhanced_data/ --CONV_NAME hgt --CUDA
+python main.py --DATASET RECCON --model_checkpoint roberta-large --alpha 0.8 --NUM_TRAIN_EPOCHS 10 --BATCH_SIZE 1 --model_save_dir ./model_save_dir/RECCON --mode train --LR 3e-6 --SEED 42 --ROOT_DIR ./bart_comet_enhanced_data/ --CONV_NAME hgt --COMET_HIDDEN_SIZE 1024 --CUDA
 ```
-Training with COMET_2019:
+Training with COMET<sub>2019</sub>:
 ```
 python main.py --DATASET RECCON --model_checkpoint roberta-large --alpha 0.8 --NUM_TRAIN_EPOCHS 10 --BATCH_SIZE 1 --model_save_dir ./model_save_dir/RECCON --mode train --LR 3e-6 --SEED 42 --ROOT_DIR ./comet_origin_enhanced_data/ --CONV_NAME multidim_hgt --COMET_HIDDEN_SIZE 768 --CUDA
 ```
