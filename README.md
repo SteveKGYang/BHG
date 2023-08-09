@@ -23,7 +23,7 @@ for each knowledge source with the following links: [COMET<sub>2019</sub>](https
 Due to storage limit, we don't provide extracted data for DailyDialog. You can use the
 following data to re-extract knowledge data for all datasets.
 
-   **Or you can build data from scratch**. Firstly, set up the extraction environments for each knowledge source.
+* **Or you can build data from scratch**. Firstly, set up the extraction environments for each knowledge source.
 
    1. For COMET<sub>2019</sub>, The related code is in ./comet/. First download the pre-trained COMET models from
       [this link](https://drive.google.com/open?id=1FccEsYPUHnjzmX-Y5vjCBeyRt1pLo8FB)
