@@ -2,7 +2,7 @@
 
 This repository contains our source code and data for the CIKM 2023 accepted
 paper: [A Bipartite Graph is All We Need for Enhancing Emotional Reasoning with
-Commonsense Knowledge]().
+Commonsense Knowledge](https://arxiv.org/abs/2308.04811).
 
 Here is an overview of the model:
 
